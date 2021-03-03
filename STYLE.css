@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    padding-top: 74px;
+    padding-left: 25px;
+    padding-right: 25px
 }
 
 a {
@@ -8,17 +11,41 @@ a {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 74px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(247, 247, 247, .95);
-    padding: 0px 25px;
+    padding: 0px 25px 0 0;
+}
+
+.navbar_logo img {
+    height:74px;
 }
 
 .navbar_button i {
     color: #444;
 }
 
+.introduction {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.introduction img {
+    height: 144px;
+    padding-right: 25px;
+}
+
+
 @media screen and (max-width: 768px) {
-    
+    .introduction img{
+        height: 72px;
+    }
 }
