@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(247, 247, 247, .95);
+    padding: 0px 25px;
+}
+
+.navbar_button i {
+    color: #444;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
