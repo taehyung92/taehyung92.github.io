@@ -1,8 +1,28 @@
+* {margin:0; padding:0; font-family:"helvetica"; color: #444444}
+p {font-size:21px; line-height:35px; padding-bottom: 15px; color:#777777}
+h1 {font-size: 52px;}
+h2 {font-size: 36px;}
+
+
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
 body {
-    margin: 0;
+    margin: auto;
     padding-top: 74px;
-    padding-left: 25px;
-    padding-right: 25px
+    padding-left: 35px;
+    padding-right: 35px;
+    max-width: 1024px;
+    background-color:rgba(247, 247, 247)
+}
+
+.underline {
+    color: #777777;
+    border-bottom: 1.5px solid #f36f36;
 }
 
 a {
@@ -25,17 +45,24 @@ a {
 }
 
 .navbar_logo img {
-    height:74px;
+    height: 74px;
 }
 
 .navbar_button i {
     color: #444;
+    padding-right: 10px;
 }
 
 .introduction {
     padding-top: 50px;
+}
+.introduction_highlight {
     display: flex;
     align-items: center;
+}
+
+.introduction_text {
+    padding-top: 30px;
 }
 
 .introduction img {
@@ -43,9 +70,104 @@ a {
     padding-right: 25px;
 }
 
+.education {
+    padding-top: 50px;
+}
+
+.education h2 {
+    padding-bottom: 15px;
+}
+
+.button_a {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    border: 1px solid #DDDDDD;
+    background-color: rgba(247, 247, 247);
+    height: 54px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0px 2px 4px #e5e5e5;
+}
+
+.button_a h2 {
+    margin: auto;
+    padding-top: 12px;
+}
+
+.my_work h1 {
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.my_work_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "card_a card_b";
+    grid-gap: 30px;
+    padding-bottom: 30px;
+}
+
+.my_work_card_a {
+    grid-area: card_a;
+    background-color: #fff;
+    
+}
+
+.my_work_card_b {
+    grid-area: card_b;
+    background-color: #fff;
+}
+
+.my_work_text {
+    height: 71px;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.lets_connect h1 {
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.lets_connect_links {
+    display: flex;
+}
+
+.lets_connect_icons {
+    padding-right: 25px;
+}
+
 
 @media screen and (max-width: 768px) {
-    .introduction img{
+    p {font-size:16px; line-height:22.5px; padding-bottom: 15px;}
+    h1 {font-size: 38px;}
+    h2 {font-size: 26px;}
+    
+    body {
+        padding-top: 74px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .introduction img {
         height: 72px;
     }
+    
+    .my_work_list {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card_a"
+            "card_b";
+    }
+
+    .my_work_text {
+        padding-bottom: 0;
+    }
+
 }
