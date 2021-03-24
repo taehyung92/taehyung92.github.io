@@ -1,6 +1,6 @@
-* {margin:0; padding:0; font-family:"helvetica"; color: #444444}
-p {font-size:18px; line-height:35px; padding-bottom: 15px; color:#777777}
-h1 {font-size: 52px;}
+* {margin:0; padding:0; font-family:"Epilogue", sans-serif; color: #444444}
+p {font-size:18px; font-family:"Roboto"; line-height:35px; padding-bottom: 15px; color:#777777}
+h1 {font-size: 52px; line-height: 70px;}
 h2 {font-size: 36px;}
 h3 {font-size: 22px;}
 
@@ -25,7 +25,7 @@ main {
 
 .underline {
     color: #777777;
-    border-bottom: 1.5px solid #f36f36;
+    border-bottom: 2px solid #f36f36;
 }
 
 a {
@@ -56,10 +56,26 @@ a {
     padding-right: 10px;
 }
 
+.banner img{
+    padding-top: 74px;
+    max-width: 100%;
+}
+
+.portfolio_contents h1{
+    padding-bottom: 50px;
+}
+
+.portfolio_contents h3{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+
 .introduction {
     padding-top: 100px;
     max-width: 720px;
 }
+
 .introduction_highlight {
     display: flex;
     align-items: center;
@@ -70,7 +86,7 @@ a {
 }
 
 .introduction_text {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .introduction img {
@@ -87,40 +103,40 @@ a {
 }
 
 .button_a {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 50px;
+   
     border-radius: 30px;
     border: 1px solid #DDDDDD;
     background-color: rgba(247, 247, 247);
     height: 54px;
-    max-width: 500px;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0px 2px 4px #e5e5e5;
 }
 
 .button_a h3 {
     margin: auto;
-    padding-top: 13px;
+    padding-top: 17px;
 }
 
 .my_work h1 {
-    padding-top: 130px;
-    padding-bottom: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 
 .my_work_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "card_a card_b";
+        "card_a card_b"
+        "card_c card_d";
     grid-gap: 30px;
 }
 
 .my_work_card_a {
     grid-area: card_a;
     background-color: #fff;
-    
+    border-radius: 9px;
 }
 
 .my_work_card_b {
@@ -128,13 +144,28 @@ a {
     background-color: #fff;
 }
 
+.my_work_card_c {
+    grid-area: card_c;
+    background-color: #fff;
+    
+}
+
+.my_work_card_d {
+    grid-area: card_d;
+    background-color: #fff;
+}
+
 .my_work_text {
     height: 71px;
     background-color: #ffffff;
-    padding-top: 10px;
+    padding-top: 13px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
+}
+
+.my_work_text p {
+    line-height: 28px;
 }
 
 .more_work {
@@ -142,8 +173,8 @@ a {
 }
 
 .lets_connect h1 {
-    padding-top: 130px;
-    padding-bottom: 30px;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
 
 .lets_connect_links {
@@ -160,14 +191,12 @@ footer {
 }
 
 .footer_box {
-    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     height: 74px;
     display: flex;
     padding-top: 25px;
     padding-bottom: 50px;
-    padding-left: 35px;
     background-color: #EFEFEF;
 }
 
@@ -175,9 +204,9 @@ footer {
 
 @media screen and (max-width: 768px){
     p {font-size: 16px; line-height:26px; padding-bottom: 15px;}
-    h1 {font-size: 38px;}
+    h1 {font-size: 32px; line-height: 50px;}
     h2 {font-size: 26px;}
-    h3 {font-size: 21px;}
+    h3 {font-size: 18px;}
     
     main {
         padding-top: 74px;
@@ -189,12 +218,20 @@ footer {
         padding-top: 50px;
     }
 
+    .portfolio_contents {
+        padding-top: 0px;
+    }
+
     .introduction img {
         height: 23px;
     }
 
     .introduction_title {
         padding-top: 20px;
+    }
+
+    .introduction_text {
+        padding-top: 40px;
     }
 
     .my_work h1 {
@@ -206,11 +243,17 @@ footer {
         grid-template-columns: 1fr;
         grid-template-areas:
             "card_a"
-            "card_b";
+            "card_b"
+            "card_c"
+            "card_d";
     }
 
     .my_work_text {
         padding-bottom: 0;
+    }
+
+    .my_work_text p {
+        line-height: 25px;
     }
 
     .button_a {
@@ -227,7 +270,7 @@ footer {
     }
     
     .button_a h3 {
-        padding-top: 13px;
+        padding-top: 17px;
     }
 
     .lets_connect h1 {
@@ -241,8 +284,7 @@ footer {
     }
 
     .footer_box {
-        width: 100%;
-        
+
         height: 74px;
         display: flex;
         padding-top: 25px;
